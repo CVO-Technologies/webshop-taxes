@@ -1,10 +1,17 @@
 {
 	"name": "cvo-technologies/webshop-taxes",
-	"type": "croogo-plugin",
+	"type": "cakephp-plugin",
 	"require": {
-		"cvo-technologies/croogo-webshop-plugin": "dev-master"
+        "cvo-technologies/croogo-webshop-plugin": "3.0.*@dev"
 	},
-	"extra": {
-		"installer-name": "WebshopTaxes"
-	}
+    "autoload": {
+        "psr-4": {
+            "Webshop\\Taxes\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webshop\\Taxes\\Test\\": "tests"
+        }
+    }
 }
